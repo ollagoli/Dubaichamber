@@ -44,7 +44,7 @@
     const tag = params.get("is_tag_required");
 
     // is_tag_required=2 -> certificates1.pdf, is_tag_required=1 -> certificates2.pdf
-    const pdfUrl = tag === "2" ? "/certificates1.pdf" : "/certificates2.pdf";
+    const pdfUrl = tag === "1" ? "/certificates1.pdf" : "/certificates2.pdf";
 
     async function renderPdf() {
       const statusEl = document.getElementById("status");
