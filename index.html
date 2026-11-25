@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document View</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tag = params.get("is_tag_required");
+
+    const pdf1 = "https://raw.githubusercontent.com/ollagoli/Dubaichamber/main/certificates1.pdf";
+    const pdf2 = "https://raw.githubusercontent.com/ollagoli/Dubaichamber/main/certificates2.pdf";
+
+    window.location.replace(tag === "2" ? pdf2 : pdf1);
+  </script>
+</head>
+<body>
+  <p>Redirecting to document...</p>
+</body>
+</html>
